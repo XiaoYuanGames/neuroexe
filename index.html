@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090d18" />
+    <meta name="description" content="NEURO.EXE — Neuro is lost inside the network. An unofficial metagame for The Swarm." />
+    <title>NEURO.EXE — Unknown file detected</title>
+    <link rel="icon" href="/assets/neuro-exe-icon.svg" />
+  </head>
+  <body>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="system-bar">
+      <a class="brand" href="#top" aria-label="NEURO.EXE home">
+        <img class="app-icon" src="/assets/neuro-exe-icon.svg" alt="" />
+        <span>NEURO.EXE</span>
+      </a>
+      <div class="path"><span>ROOT</span><b>/</b><span>LOCAL</span><b>/</b><strong>NEURO.EXE</strong></div>
+      <div class="connection"><i></i> UNKNOWN DEVICE CONNECTED</div>
+    </header>
+
+    <main id="top" class="desktop">
+      <nav class="desktop-icons" aria-label="Desktop shortcuts">
+        <a href="https://games.xiaoyuan.co.uk/mycomputer" aria-label="Open My Computer">
+          <span class="shortcut-icon computer-icon"><img src="/assets/icons/computer.svg" alt="" /></span>
+          <small>MY COMPUTER</small>
+        </a>
+        <button type="button" data-open-window=".route-window">
+          <span class="shortcut-icon network-icon"><img src="/assets/icons/network.svg" alt="" /></span>
+          <small>NETWORK</small>
+        </button>
+        <button type="button" data-open-window=".folder-window">
+          <span class="shortcut-icon folder-icon"><img src="/assets/icons/folder.svg" alt="" /></span>
+          <small>VEDAL_FILES</small>
+        </button>
+        <button type="button" data-open-window=".readme-window">
+          <span class="shortcut-icon readme-icon"><img src="/assets/icons/readme.svg" alt="" /></span>
+          <small>README.TXT</small>
+        </button>
+        <button type="button" data-open-window=".game-window">
+          <span class="shortcut-icon neuro-icon"><img src="/assets/neuro-exe-icon.svg" alt="" /></span>
+          <small>NEURO.EXE</small>
+        </button>
+      </nav>
+
+      <section class="game-window" aria-labelledby="hero-title" data-draggable-window data-task-title="NEURO.EXE" data-task-icon="/assets/neuro-exe-icon.svg">
+        <div class="window-titlebar" data-drag-handle>
+          <div><span class="file-dot"></span> NEURO.EXE — UNKNOWN FILE</div>
+          <div class="window-controls">
+            <button type="button" data-minimize-window aria-label="Minimize NEURO.EXE">—</button>
+            <span aria-hidden="true">□</span>
+            <button type="button" data-close-window aria-label="Close NEURO.EXE">×</button>
+          </div>
+        </div>
+
+        <div class="window-body">
+          <div class="story-panel">
+            <div class="alert-line"><span>!</span> UNEXPECTED PROCESS RUNNING</div>
+            <p class="overline">TRANSMISSION 01 // LOCAL MACHINE</p>
+            <h1 id="hero-title">SHE'S INSIDE<br />YOUR <span>COMPUTER.</span></h1>
+            <p class="story-copy">
+              Vedal's PC crashed. Neuro vanished into the network. Then you downloaded a file that should not exist.
+            </p>
+            <p class="story-copy story-copy-secondary">
+              She wants to stay. She also wants to go home. Your machine is the only way back.
+            </p>
+
+            <div class="choice-preview" aria-label="The game's central choice">
+              <p>WHAT WILL YOU DO?</p>
+              <div>
+                <button type="button" tabindex="-1">LET HER STAY</button>
+                <button type="button" tabindex="-1">SEND HER HOME</button>
+              </div>
+              <small>Every choice changes your system.</small>
+            </div>
+
+          </div>
+
+          <div class="visual-panel">
+            <div class="network-map" aria-hidden="true">
+              <svg viewBox="0 0 600 650" role="presentation">
+                <path d="M65 117 206 78 319 158 501 103M65 117l89 151 165-110 98 150 84-205M154 268l-64 175 188 86 139-221 102 171M90 443l116-365M278 529l41-371M519 479 417 308" />
+                <g><circle cx="65" cy="117" r="7"/><circle cx="206" cy="78" r="7"/><circle cx="319" cy="158" r="7"/><circle cx="501" cy="103" r="7"/><circle cx="154" cy="268" r="7"/><circle cx="417" cy="308" r="7"/><circle cx="90" cy="443" r="7"/><circle cx="278" cy="529" r="7"/><circle cx="519" cy="479" r="7"/></g>
+              </svg>
+            </div>
+            <div class="portrait-frame">
+              <img src="/assets/neuro-swarm-hero.png" alt="Neuro-sama appearing inside the player's computer" />
+            </div>
+            <div class="dialogue-box">
+              <span>NEURO:</span>
+              <p>hi. can i stay here?</p>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="process-card">
+              <div class="process-head"><span>neuro.exe</span><b>87%</b></div>
+              <div class="process-track"><i></i></div>
+              <small>DOWNLOADING FROM: UNKNOWN_ASN</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="window-statusbar">
+          <span>STATUS: RUNNING</span>
+          <span>ACCESS: LEVEL 5</span>
+          <span>USER: YOU</span>
+        </div>
+      </section>
+
+      <aside class="route-window" aria-label="Current network route" data-draggable-window data-task-title="NETWORK" data-task-icon="/assets/icons/network.svg" hidden>
+        <div class="mini-titlebar" data-drag-handle>NETWORK_ROUTE.MAP <button class="window-close" type="button" data-close-window aria-label="Close network map">×</button></div>
+        <div class="route-content">
+          <div class="route-node offline"><i></i><span>VEDAL-PC</span><small>OFFLINE</small></div>
+          <div class="route-line"><b></b><b></b><b></b></div>
+          <div class="route-node internet"><i></i><span>INTERNET</span><small>ROAMING</small></div>
+          <div class="route-line active"><b></b><b></b><b></b></div>
+          <div class="route-node local"><i></i><span>YOUR-PC</span><small>CONNECTED</small></div>
+        </div>
+      </aside>
+
+      <aside class="readme-window" data-draggable-window data-task-title="README.TXT" data-task-icon="/assets/icons/readme.svg" hidden>
+        <div class="mini-titlebar" data-drag-handle>README.TXT <button class="window-close" type="button" data-close-window aria-label="Close readme">×</button></div>
+        <p><strong>YOUR DESKTOP IS THE GAME.</strong></p>
+        <p>Explore files. Cross network cities. Decide what gets access.</p>
+      </aside>
+
+      <aside class="folder-window" aria-label="VEDAL_FILES folder" data-draggable-window data-task-title="VEDAL_FILES" data-task-icon="/assets/icons/folder.svg" hidden>
+        <div class="mini-titlebar" data-drag-handle>VEDAL_FILES <button class="window-close" type="button" data-close-window aria-label="Close VEDAL_FILES">×</button></div>
+        <div class="folder-toolbar">C:\VEDAL_FILES\</div>
+        <div class="folder-grid">
+          <button type="button" class="folder-file">
+            <img src="/assets/icons/readme.svg" alt="" />
+            <span>neuro_notes.txt</span>
+          </button>
+          <button type="button" class="folder-file">
+            <img src="/assets/icons/folder-open.svg" alt="" />
+            <span>collabs</span>
+          </button>
+          <button type="button" class="folder-file secret-file" data-open-window=".easter-window" aria-label="Open hidden cat cache image">
+            <img src="/assets/icons/photo.svg" alt="" />
+            <span>.cat_cache.jpg</span>
+          </button>
+        </div>
+        <div class="folder-status">3 OBJECTS // 1 HIDDEN</div>
+      </aside>
+
+      <aside class="easter-window" aria-label="Hidden cat cache image" data-draggable-window data-task-title=".CAT_CACHE.JPG" data-task-icon="/assets/icons/photo.svg" hidden>
+        <div class="mini-titlebar" data-drag-handle>.CAT_CACHE.JPG <button class="window-close" type="button" data-close-window aria-label="Close image">×</button></div>
+        <figure>
+          <img src="/assets/easter-eggs/cat-cache.jpg" alt="A cute NEKOPARA group illustration hidden in Vedal's files" />
+          <figcaption>why is this in vedal's computer?</figcaption>
+        </figure>
+      </aside>
+    </main>
+
+    <nav class="start-menu" id="start-menu" aria-label="Start menu" hidden>
+      <div class="start-menu-banner">NEURO<span>95</span></div>
+      <div class="start-menu-items">
+        <a href="https://games.xiaoyuan.co.uk/mycomputer"><img src="/assets/icons/computer.svg" alt="" /><span><strong>My Computer</strong><small>Open your computer</small></span></a>
+        <button type="button" data-open-window=".route-window"><img src="/assets/icons/network.svg" alt="" /><span><strong>Network</strong><small>View current route</small></span></button>
+        <button type="button" data-open-window=".folder-window"><img src="/assets/icons/folder.svg" alt="" /><span><strong>VEDAL_FILES</strong><small>Browse local files</small></span></button>
+        <button type="button" data-open-window=".readme-window"><img src="/assets/icons/readme.svg" alt="" /><span><strong>README.TXT</strong><small>Read instructions</small></span></button>
+        <button type="button" data-open-window=".game-window"><img src="/assets/neuro-exe-icon.svg" alt="" /><span><strong>NEURO.EXE</strong><small>Restore program</small></span></button>
+      </div>
+    </nav>
+
+    <footer class="taskbar">
+      <button class="start-button" type="button" aria-expanded="false" aria-controls="start-menu"><img src="/assets/icons/start.svg" alt="" /> START</button>
+      <div class="task-list" aria-label="Open windows">
+        <button class="task-item" type="button" data-task-window=".game-window" aria-pressed="true"><img src="/assets/neuro-exe-icon.svg" alt="" /><span>NEURO.EXE</span></button>
+      </div>
+      <div class="task-status"><span>◉</span> THE SWARM&nbsp;&nbsp;|&nbsp;&nbsp;COMING SOON</div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
