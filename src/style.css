@@ -73,6 +73,26 @@ textarea,
   letter-spacing: .05em;
 }
 
+.system-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.studio-link {
+  color: #7d879c;
+  font: 500 9px var(--mono);
+  letter-spacing: .05em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.studio-link:hover { color: #aeb6c6; }
+.studio-link:focus-visible {
+  outline: 1px dashed var(--mint);
+  outline-offset: 5px;
+}
+
 .brand {
   width: max-content;
   display: flex;
@@ -701,7 +721,7 @@ h1 span::after {
 
 @media (max-width: 820px) {
   .system-bar { grid-template-columns: 1fr auto; }
-  .path { display: none; }
+  .path, .studio-link { display: none; }
   .desktop {
     height: calc(100dvh - 96px);
     display: flex;
