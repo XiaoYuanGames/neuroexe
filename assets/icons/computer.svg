@@ -1,19 +1,9 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop-code"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" />
-  <path d="M7 20h4" />
-  <path d="M9 16v4" />
-  <path d="M20 21l2 -2l-2 -2" />
-  <path d="M17 17l-2 2l2 2" />
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M8 16h8l1 3.5H7L8 16Z" fill="#b9b3a7" stroke="#101626" stroke-width="1.6" stroke-linejoin="round" />
+  <rect x="2.5" y="3" width="19" height="13.5" rx="2" fill="#eae2d3" stroke="#101626" stroke-width="1.6" />
+  <rect x="4.5" y="5" width="15" height="9" rx="1" fill="#132242" stroke="#101626" stroke-width="1.2" />
+  <path d="M7.2 8l2 1.7-2 1.7" stroke="#4ef2d2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M11 11.4h3.2" stroke="#82aeff" stroke-width="1.6" stroke-linecap="round" />
+  <circle cx="17.5" cy="15" r="0.85" fill="#ff4f70" />
+  <path d="M5.5 19.5h13" stroke="#101626" stroke-width="1.7" stroke-linecap="round" />
 </svg>
