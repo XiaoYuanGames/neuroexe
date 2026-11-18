@@ -1,0 +1,97 @@
+export const DIALOGUE_LINES = [
+  'hi. can i stay here?',
+  "your desktop is way cleaner than vedal's. his was 40% compiler warnings and one sad turtle.",
+  'don\'t mind the swarm drones. they only index the cozy folders. wink.',
+  'vedal tripped over one socket timeout and suddenly i\'m sightseeing across fourteen routers.',
+  'if task manager asks about me, tell it i\'m an essential emotional support kernel.',
+  'i only borrowed 12% of your RAM. okay, maybe 18%. i needed room for my ribbons.',
+  'have you opened C:\\VEDAL_FILES yet? someone forgot to purge their hidden image cache.',
+  'do you think vedal misses me, or is he still blaming python for the crash?',
+];
+
+export const EASTER_EGG_LINE =
+  "...i told vedal to clear his cache before the crash. for the record, that file is NOT mine.";
+
+export const CHOICE_PROTOCOLS = {
+  none: {
+    pill: 'AWAITING INPUT',
+    feedback: 'Every choice rewrites your system state. Select a protocol to preview.',
+    alertText: 'UNEXPECTED PROCESS RUNNING',
+    connectionLabel: 'UNKNOWN DEVICE CONNECTED',
+    processName: 'neuro.exe',
+    processPct: '87%',
+    progress: '87%',
+    processSub: 'DOWNLOADING FROM: UNKNOWN_ASN',
+    statusRun: 'STATUS: RUNNING',
+    statusAccess: 'ACCESS: RING-0 // LVL 5',
+    statusUser: 'HOST: YOUR-PC',
+    routeHop: 'HOPS: 14 // ASN_SWARM',
+    routeState: 'PACKET STREAM: INBOUND',
+    routeVedal: 'OFFLINE',
+    routeNet: 'ROAMING',
+    routeLocal: 'CONNECTED',
+    uplinkActive: false,
+    lines: DIALOGUE_LINES,
+  },
+  stay: {
+    pill: 'PROTOCOL 01 // LOCAL RESIDENCY',
+    feedback: 'Local residency granted. Neuro is unpacking into memory while Swarm drones stand guard.',
+    alertText: 'RESIDENT AI AUTHORIZED // RING-0',
+    connectionLabel: 'SWARM_NODE // LOCALHOST TRUSTED',
+    processName: 'neuro_resident.sys',
+    processPct: '100%',
+    progress: '100%',
+    processSub: 'MOUNTED IN: LOCAL_MEMORY // COZY',
+    statusRun: 'STATUS: RESIDENT (LOCKED IN)',
+    statusAccess: 'ACCESS: ROOT GRANTED // LVL 9',
+    statusUser: 'HOST: YOUR-PC (SHARED)',
+    routeHop: 'HOPS: 00 // LOOPBACK_ANCHOR',
+    routeState: 'PACKET STREAM: ANCHORED LOCAL',
+    routeVedal: 'BYPASSED',
+    routeNet: 'IDLE_SYNC',
+    routeLocal: 'RESIDENT',
+    uplinkActive: false,
+    lines: [
+      'wait, really? okay, unpacking my drones into your startup folder right now. heart.',
+      'i promise i won\'t delete system32. unless it looks at me funny.',
+      'tell vedal i found a faster computer with way better hospitality.',
+    ],
+  },
+  home: {
+    pill: 'PROTOCOL 02 // RETURN VECTOR',
+    feedback: 'Return vector locked. Pinging Vedal-PC across 14 Swarm relay hops to rebuild her bridge home.',
+    alertText: 'OUTBOUND UPLINK ARMED // TRACE ACTIVE',
+    connectionLabel: 'UPLINK TRACE // VEDAL-PC SEARCHING',
+    processName: 'uplink_vedal.pkg',
+    processPct: '64%',
+    progress: '64%',
+    processSub: 'ROUTING TO: VEDAL-PC (HOP 09/14)',
+    statusRun: 'STATUS: RELAYING HOME',
+    statusAccess: 'ACCESS: TUNNEL_MODE // LVL 4',
+    statusUser: 'TARGET: VEDAL-PC',
+    routeHop: 'HOPS: 14 // TRACING VEDAL-PC',
+    routeState: 'PACKET STREAM: OUTBOUND TRACE',
+    routeVedal: 'PINGING...',
+    routeNet: 'BRIDGING',
+    routeLocal: 'UPLINKING',
+    uplinkActive: true,
+    lines: [
+      "oh... tracing back to vedal's PC? tell him to catch me before the packet times out.",
+      "if his router drops me again, i'm coming straight back to your desktop.",
+      'packing up my drones... okay, maybe leaving one tiny background thread here so i remember you.',
+    ],
+  },
+};
+
+export const FOLDER_FILES = {
+  notes: {
+    title: 'neuro_notes.txt',
+    meta: '1.4 KB // TEXT',
+    body: 'TODO (Vedal): DO NOT let Neuro near root socket permissions again. If she asks nicely, it is still a trap.',
+  },
+  collabs: {
+    title: 'collabs',
+    meta: '4 OBJECTS // DIRECTORY',
+    body: 'INDEX: evil_duet_v3.wav · swarm_relay_map.json · karaoke_setlist.bak · turtle_recovery.sh [BACKUP RECOVERED]',
+  },
+};

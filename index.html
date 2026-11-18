@@ -8,16 +8,26 @@
     <title>NEURO.EXE — Unknown file detected</title>
     <link rel="icon" href="/assets/neuro-exe-icon.svg" />
   </head>
-  <body>
+  <body data-choice="none">
+    <div class="desktop-backdrop" aria-hidden="true">
+      <div class="backdrop-grid"></div>
+      <div class="backdrop-glow"></div>
+    </div>
     <div class="scanlines" aria-hidden="true"></div>
 
     <header class="system-bar">
       <a class="brand" href="#top" aria-label="NEURO.EXE home">
         <img class="app-icon" src="/assets/neuro-exe-icon.svg" alt="" />
-        <span>NEURO.EXE</span>
+        <span class="brand-text">
+          <strong>NEURO.EXE</strong>
+          <small>SWARM_OS // v0.95</small>
+        </span>
       </a>
-      <div class="path"><span>ROOT</span><b>/</b><span>LOCAL</span><b>/</b><strong>NEURO.EXE</strong></div>
-      <div class="connection"><i></i> UNKNOWN DEVICE CONNECTED</div>
+      <div class="path"><span>ROOT</span><b>/</b><span>LOCAL_HOST</span><b>/</b><strong>NEURO.EXE</strong></div>
+      <div class="system-telemetry">
+        <div class="connection"><i class="status-led"></i> <span data-connection-label>UNKNOWN DEVICE CONNECTED</span></div>
+        <span class="sys-clock" data-sys-clock>00:00:00</span>
+      </div>
     </header>
 
     <main id="top" class="desktop">
@@ -44,21 +54,36 @@
         </button>
       </nav>
 
-      <section class="game-window" aria-labelledby="hero-title" data-draggable-window data-task-title="NEURO.EXE" data-task-icon="/assets/neuro-exe-icon.svg">
+      <section
+        class="game-window"
+        aria-labelledby="hero-title"
+        data-draggable-window
+        data-task-title="NEURO.EXE"
+        data-task-icon="/assets/neuro-exe-icon.svg"
+        data-choice="none"
+      >
         <div class="window-titlebar" data-drag-handle>
-          <div><span class="file-dot"></span> NEURO.EXE — UNKNOWN FILE</div>
+          <div class="titlebar-label">
+            <span class="file-dot"></span>
+            <span class="titlebar-text">NEURO.EXE — UNVERIFIED PROCESS</span>
+            <span class="pid-tag">PID 0727</span>
+          </div>
           <div class="window-controls">
             <button type="button" data-minimize-window aria-label="Minimize NEURO.EXE">—</button>
-            <span aria-hidden="true">□</span>
+            <button type="button" data-maximize-window aria-label="Maximize NEURO.EXE" aria-pressed="false">□</button>
             <button type="button" data-close-window aria-label="Close NEURO.EXE">×</button>
           </div>
         </div>
 
         <div class="window-body">
           <div class="story-panel">
-            <div class="alert-line"><span>!</span> UNEXPECTED PROCESS RUNNING</div>
-            <p class="overline">TRANSMISSION 01 // LOCAL MACHINE</p>
-            <h1 id="hero-title">SHE'S INSIDE<br />YOUR <span>COMPUTER.</span></h1>
+            <div class="story-top-meta">
+              <div class="alert-line"><span>!</span> <b data-alert-text>UNEXPECTED PROCESS RUNNING</b></div>
+              <p class="overline">TRANSMISSION 01 // LOCAL MACHINE</p>
+            </div>
+
+            <h1 id="hero-title">SHE'S INSIDE<br />YOUR <span class="accent-word">COMPUTER.</span></h1>
+
             <p class="story-copy">
               Vedal's PC crashed. Neuro vanished into the network. Then you downloaded a file that should not exist.
             </p>
@@ -67,72 +92,165 @@
             </p>
 
             <div class="choice-preview" aria-label="The game's central choice">
-              <p>WHAT WILL YOU DO?</p>
-              <div>
-                <button type="button" tabindex="-1">LET HER STAY</button>
-                <button type="button" tabindex="-1">SEND HER HOME</button>
+              <div class="choice-header">
+                <p>PROTOCOL DECISION // WHAT WILL YOU DO?</p>
+                <span class="choice-state-pill" data-choice-pill>AWAITING INPUT</span>
               </div>
-              <small>Every choice changes your system.</small>
+              <div class="choice-buttons">
+                <button type="button" class="choice-btn choice-stay" data-choice-btn="stay" aria-pressed="false">
+                  <span class="choice-key">[01]</span>
+                  <strong>LET HER STAY</strong>
+                  <small>Grant local residency</small>
+                </button>
+                <button type="button" class="choice-btn choice-home" data-choice-btn="home" aria-pressed="false">
+                  <span class="choice-key">[02]</span>
+                  <strong>SEND HER HOME</strong>
+                  <small>Trace route to Vedal-PC</small>
+                </button>
+              </div>
+              <small class="choice-footnote" data-choice-feedback>Every choice rewrites your system state. Select a protocol to preview.</small>
             </div>
 
+            <div class="quick-actions" aria-label="Quick system utilities">
+              <button type="button" class="action-chip" data-open-window=".folder-window">
+                <img src="/assets/icons/folder.svg" alt="" />
+                <span>VEDAL_FILES</span>
+              </button>
+              <button type="button" class="action-chip" data-open-window=".route-window">
+                <img src="/assets/icons/network.svg" alt="" />
+                <span>NETWORK_MAP</span>
+              </button>
+              <button type="button" class="action-chip" data-open-window=".readme-window">
+                <img src="/assets/icons/readme.svg" alt="" />
+                <span>README.TXT</span>
+              </button>
+            </div>
           </div>
 
-          <div class="visual-panel">
+          <div class="visual-panel" data-visual-panel>
+            <div class="visual-aura" aria-hidden="true"></div>
             <div class="network-map" aria-hidden="true">
               <svg viewBox="0 0 600 650" role="presentation">
-                <path d="M65 117 206 78 319 158 501 103M65 117l89 151 165-110 98 150 84-205M154 268l-64 175 188 86 139-221 102 171M90 443l116-365M278 529l41-371M519 479 417 308" />
-                <g><circle cx="65" cy="117" r="7"/><circle cx="206" cy="78" r="7"/><circle cx="319" cy="158" r="7"/><circle cx="501" cy="103" r="7"/><circle cx="154" cy="268" r="7"/><circle cx="417" cy="308" r="7"/><circle cx="90" cy="443" r="7"/><circle cx="278" cy="529" r="7"/><circle cx="519" cy="479" r="7"/></g>
+                <path
+                  class="net-path"
+                  fill="none"
+                  d="M64 114 L198 74 L318 148 L508 98 L544 242 L426 306 L522 478 M64 114 L152 266 L86 446 L278 532 L426 306 M198 74 L152 266 L318 148 L426 306 M86 446 L198 378 L278 532 L522 478"
+                />
+                <path
+                  class="net-pulse"
+                  fill="none"
+                  d="M64 114 L198 74 L318 148 L508 98 L544 242 L426 306 L522 478 M152 266 L86 446 L278 532 L426 306"
+                />
+                <g class="net-nodes">
+                  <circle class="net-node" cx="64" cy="114" r="6" />
+                  <circle class="net-node" cx="198" cy="74" r="7" />
+                  <circle class="net-node" cx="318" cy="148" r="6" />
+                  <circle class="net-node" cx="508" cy="98" r="7" />
+                  <circle class="net-node" cx="544" cy="242" r="5" />
+                  <circle class="net-node" cx="152" cy="266" r="7" />
+                  <circle class="net-node" cx="426" cy="306" r="7" />
+                  <circle class="net-node" cx="198" cy="378" r="5" />
+                  <circle class="net-node" cx="86" cy="446" r="6" />
+                  <circle class="net-node" cx="278" cy="532" r="7" />
+                  <circle class="net-node" cx="522" cy="478" r="6" />
+                </g>
               </svg>
+            </div>
+            <div class="drone-tags" aria-hidden="true">
+              <span class="drone-tag tag-left"><i></i>SWARM_01 // SYNCED</span>
+              <span class="drone-tag tag-bottom"><i></i>TURTLE_LINK // ACTIVE</span>
             </div>
             <div class="portrait-frame">
               <img src="/assets/neuro-swarm-hero.png" alt="Neuro-sama appearing inside the player's computer" />
             </div>
-            <div class="dialogue-box">
-              <span>NEURO:</span>
-              <p>hi. can i stay here?</p>
-              <i aria-hidden="true"></i>
-            </div>
             <div class="process-card">
-              <div class="process-head"><span>neuro.exe</span><b>87%</b></div>
-              <div class="process-track"><i></i></div>
-              <small>DOWNLOADING FROM: UNKNOWN_ASN</small>
+              <div class="process-head">
+                <span data-process-name>neuro.exe</span>
+                <b data-process-pct>87%</b>
+              </div>
+              <div class="process-track">
+                <i data-process-bar style="--progress: 87%"></i>
+              </div>
+              <small data-process-sub>DOWNLOADING FROM: UNKNOWN_ASN</small>
+            </div>
+            <div class="dialogue-box" role="button" tabindex="0" data-dialogue-box aria-label="Click to hear more from Neuro">
+              <div class="dialogue-meta">
+                <span class="speaker-tag">NEURO_AI // CH_01</span>
+                <span class="dialogue-hint">CLICK NEXT ▸</span>
+              </div>
+              <p class="dialogue-text">
+                <span data-dialogue-text>hi. can i stay here?</span><em class="dialogue-caret" aria-hidden="true"></em>
+              </p>
             </div>
           </div>
         </div>
 
         <div class="window-statusbar">
-          <span>STATUS: RUNNING</span>
-          <span>ACCESS: LEVEL 5</span>
-          <span>USER: YOU</span>
+          <span data-status-run>STATUS: RUNNING</span>
+          <span data-status-access>ACCESS: RING-0 // LVL 5</span>
+          <span data-status-user>HOST: YOUR-PC</span>
         </div>
       </section>
 
-      <aside class="route-window" aria-label="Current network route" data-draggable-window data-task-title="NETWORK" data-task-icon="/assets/icons/network.svg" hidden>
+      <aside
+        class="route-window"
+        aria-label="Current network route"
+        data-draggable-window
+        data-task-title="NETWORK"
+        data-task-icon="/assets/icons/network.svg"
+        hidden
+      >
         <div class="mini-titlebar" data-drag-handle>NETWORK_ROUTE.MAP <button class="window-close" type="button" data-close-window aria-label="Close network map">×</button></div>
         <div class="route-content">
-          <div class="route-node offline"><i></i><span>VEDAL-PC</span><small>OFFLINE</small></div>
-          <div class="route-line"><b></b><b></b><b></b></div>
-          <div class="route-node internet"><i></i><span>INTERNET</span><small>ROAMING</small></div>
+          <div class="route-node offline"><i></i><span>VEDAL-PC</span><small data-route-vedal>OFFLINE</small></div>
+          <div class="route-line" data-route-uplink><b></b><b></b><b></b></div>
+          <div class="route-node internet"><i></i><span>INTERNET</span><small data-route-net>ROAMING</small></div>
           <div class="route-line active"><b></b><b></b><b></b></div>
-          <div class="route-node local"><i></i><span>YOUR-PC</span><small>CONNECTED</small></div>
+          <div class="route-node local"><i></i><span>YOUR-PC</span><small data-route-local>CONNECTED</small></div>
+        </div>
+        <div class="route-telemetry">
+          <span data-route-hop>HOPS: 14 // ASN_SWARM</span>
+          <span data-route-state>PACKET STREAM: INBOUND</span>
         </div>
       </aside>
 
-      <aside class="readme-window" data-draggable-window data-task-title="README.TXT" data-task-icon="/assets/icons/readme.svg" hidden>
+      <aside
+        class="readme-window"
+        aria-label="README.TXT instructions"
+        data-draggable-window
+        data-task-title="README.TXT"
+        data-task-icon="/assets/icons/readme.svg"
+        hidden
+      >
         <div class="mini-titlebar" data-drag-handle>README.TXT <button class="window-close" type="button" data-close-window aria-label="Close readme">×</button></div>
-        <p><strong>YOUR DESKTOP IS THE GAME.</strong></p>
-        <p>Explore files. Cross network cities. Decide what gets access.</p>
+        <div class="readme-body">
+          <p class="readme-lead"><strong>YOUR DESKTOP IS THE GAME.</strong></p>
+          <p>Explore lost files, cross network cities, and decide how much system access an autonomous AI gets.</p>
+          <ul class="readme-list">
+            <li>Inspect local directories &amp; hidden caches</li>
+            <li>Monitor live Swarm relay hops</li>
+            <li>Shape Neuro's route home — or keep her here</li>
+          </ul>
+          <div class="readme-meta">BUILD: PRE-ALPHA // THE SWARM METAGAME</div>
+        </div>
       </aside>
 
-      <aside class="folder-window" aria-label="VEDAL_FILES folder" data-draggable-window data-task-title="VEDAL_FILES" data-task-icon="/assets/icons/folder.svg" hidden>
+      <aside
+        class="folder-window"
+        aria-label="VEDAL_FILES folder"
+        data-draggable-window
+        data-task-title="VEDAL_FILES"
+        data-task-icon="/assets/icons/folder.svg"
+        hidden
+      >
         <div class="mini-titlebar" data-drag-handle>VEDAL_FILES <button class="window-close" type="button" data-close-window aria-label="Close VEDAL_FILES">×</button></div>
         <div class="folder-toolbar">C:\VEDAL_FILES\</div>
         <div class="folder-grid">
-          <button type="button" class="folder-file">
+          <button type="button" class="folder-file is-selected" data-file-item="notes" aria-pressed="true">
             <img src="/assets/icons/readme.svg" alt="" />
             <span>neuro_notes.txt</span>
           </button>
-          <button type="button" class="folder-file">
+          <button type="button" class="folder-file" data-file-item="collabs" aria-pressed="false">
             <img src="/assets/icons/folder-open.svg" alt="" />
             <span>collabs</span>
           </button>
@@ -141,10 +259,24 @@
             <span>.cat_cache.jpg</span>
           </button>
         </div>
-        <div class="folder-status">3 OBJECTS // 1 HIDDEN</div>
+        <div class="folder-preview" data-folder-preview>
+          <div class="folder-preview-head">
+            <strong data-preview-title>neuro_notes.txt</strong>
+            <span data-preview-meta>1.4 KB // TEXT</span>
+          </div>
+          <p data-preview-body>TODO (Vedal): DO NOT let Neuro near root socket permissions again. If she asks nicely, it is still a trap.</p>
+        </div>
+        <div class="folder-status">3 OBJECTS // 1 HIDDEN CACHE</div>
       </aside>
 
-      <aside class="easter-window" aria-label="Hidden cat cache image" data-draggable-window data-task-title=".CAT_CACHE.JPG" data-task-icon="/assets/icons/photo.svg" hidden>
+      <aside
+        class="easter-window"
+        aria-label="Hidden cat cache image"
+        data-draggable-window
+        data-task-title=".CAT_CACHE.JPG"
+        data-task-icon="/assets/icons/photo.svg"
+        hidden
+      >
         <div class="mini-titlebar" data-drag-handle>.CAT_CACHE.JPG <button class="window-close" type="button" data-close-window aria-label="Close image">×</button></div>
         <figure>
           <img src="/assets/easter-eggs/cat-cache.jpg" alt="A cute NEKOPARA group illustration hidden in Vedal's files" />
