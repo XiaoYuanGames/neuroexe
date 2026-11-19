@@ -4,11 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#090d18" />
-    <meta name="description" content="NEURO.EXE — Neuro is lost inside the network. An unofficial metagame for The Swarm." />
+    <meta name="description" content="NEURO.EXE — Neuro is lost inside the network. An unofficial metagame for The Swarm. Unofficial fan work, coming soon." />
+    <link rel="canonical" href="https://neuroexe.xiaoyuan.gg/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="XiaoYuan Games" />
+    <meta property="og:title" content="NEURO.EXE — Unknown file detected" />
+    <meta property="og:description" content="Neuro is lost inside the network. An unofficial metagame for The Swarm. Coming soon." />
+    <meta property="og:url" content="https://neuroexe.xiaoyuan.gg/" />
+    <meta property="og:image" content="https://neuroexe.xiaoyuan.gg/og/neuro-swarm-hero.png" />
+    <meta property="og:image:width" content="683" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="Neuro-sama appearing inside the player's computer." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@XiaoYuanGames" />
+    <meta name="twitter:title" content="NEURO.EXE — Unknown file detected" />
+    <meta name="twitter:description" content="Neuro is lost inside the network. An unofficial metagame for The Swarm. Coming soon." />
+    <meta name="twitter:image" content="https://neuroexe.xiaoyuan.gg/og/neuro-swarm-hero.png" />
+    <meta name="twitter:image:alt" content="Neuro-sama appearing inside the player's computer." />
     <title>NEURO.EXE — Unknown file detected</title>
     <link rel="icon" href="/assets/neuro-exe-icon.svg" />
   </head>
   <body data-choice="none">
+    <a class="skip-link" href="#top">Skip to NEURO.EXE</a>
     <div class="desktop-backdrop" aria-hidden="true">
       <div class="backdrop-grid"></div>
       <div class="backdrop-glow"></div>
@@ -16,13 +33,16 @@
     <div class="scanlines" aria-hidden="true"></div>
 
     <header class="system-bar">
-      <a class="brand" href="#top" aria-label="NEURO.EXE home">
-        <img class="app-icon" src="/assets/neuro-exe-icon.svg" alt="" />
-        <span class="brand-text">
-          <strong>NEURO.EXE</strong>
-          <small>SWARM_OS // v0.95</small>
-        </span>
-      </a>
+      <div class="system-brand-group">
+        <a class="brand" href="#top" aria-label="NEURO.EXE home">
+          <img class="app-icon" src="/assets/neuro-exe-icon.svg" alt="" />
+          <span class="brand-text">
+            <strong>NEURO.EXE</strong>
+            <small>SWARM_OS // v0.95</small>
+          </span>
+        </a>
+        <a class="studio-link" href="https://xiaoyuan.gg" target="_blank" rel="noopener noreferrer">XIAOYUAN GAMES<span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
       <div class="path"><span>ROOT</span><b>/</b><span>LOCAL_HOST</span><b>/</b><strong>NEURO.EXE</strong></div>
       <div class="system-telemetry">
         <div class="connection"><i class="status-led"></i> <span data-connection-label>UNKNOWN DEVICE CONNECTED</span></div>
@@ -30,9 +50,9 @@
       </div>
     </header>
 
-    <main id="top" class="desktop">
+    <main id="top" class="desktop" tabindex="-1">
       <nav class="desktop-icons" aria-label="Desktop shortcuts">
-        <a href="https://games.xiaoyuan.co.uk/mycomputer" aria-label="Open My Computer">
+        <a href="https://mycomputer.xiaoyuan.gg" aria-label="Open My Computer">
           <span class="shortcut-icon computer-icon"><img src="/assets/icons/computer.svg" alt="" /></span>
           <small>MY COMPUTER</small>
         </a>
@@ -125,6 +145,8 @@
                 <span>README.TXT</span>
               </button>
             </div>
+
+            <p class="fan-notice"><strong>UNOFFICIAL FAN WORK.</strong> An unofficial metagame for The Swarm. Characters and names belong to their respective owners.</p>
           </div>
 
           <div class="visual-panel" data-visual-panel>
@@ -161,7 +183,10 @@
               <span class="drone-tag tag-bottom"><i></i>TURTLE_LINK // ACTIVE</span>
             </div>
             <div class="portrait-frame">
-              <img src="/assets/neuro-swarm-hero.png" alt="Neuro-sama appearing inside the player's computer" />
+              <picture>
+                <source srcset="/assets/neuro-swarm-hero.webp" type="image/webp" />
+                <img src="/assets/neuro-swarm-hero.png" alt="Neuro-sama appearing inside the player's computer" width="1024" height="1536" fetchpriority="high" decoding="async" />
+              </picture>
             </div>
             <div class="process-card">
               <div class="process-head">
@@ -279,7 +304,10 @@
       >
         <div class="mini-titlebar" data-drag-handle>.CAT_CACHE.JPG <button class="window-close" type="button" data-close-window aria-label="Close image">×</button></div>
         <figure>
-          <img src="/assets/easter-eggs/cat-cache.jpg" alt="A cute NEKOPARA group illustration hidden in Vedal's files" />
+          <picture>
+            <source srcset="/assets/easter-eggs/cat-cache.webp" type="image/webp" />
+            <img src="/assets/easter-eggs/cat-cache.jpg" alt="A cute NEKOPARA group illustration hidden in Vedal's files" width="1280" height="720" loading="lazy" decoding="async" />
+          </picture>
           <figcaption>why is this in vedal's computer?</figcaption>
         </figure>
       </aside>
@@ -288,11 +316,17 @@
     <nav class="start-menu" id="start-menu" aria-label="Start menu" hidden>
       <div class="start-menu-banner">NEURO<span>95</span></div>
       <div class="start-menu-items">
-        <a href="https://games.xiaoyuan.co.uk/mycomputer"><img src="/assets/icons/computer.svg" alt="" /><span><strong>My Computer</strong><small>Open your computer</small></span></a>
+        <a href="https://mycomputer.xiaoyuan.gg"><img src="/assets/icons/computer.svg" alt="" /><span><strong>My Computer</strong><small>Open your computer</small></span></a>
         <button type="button" data-open-window=".route-window"><img src="/assets/icons/network.svg" alt="" /><span><strong>Network</strong><small>View current route</small></span></button>
         <button type="button" data-open-window=".folder-window"><img src="/assets/icons/folder.svg" alt="" /><span><strong>VEDAL_FILES</strong><small>Browse local files</small></span></button>
         <button type="button" data-open-window=".readme-window"><img src="/assets/icons/readme.svg" alt="" /><span><strong>README.TXT</strong><small>Read instructions</small></span></button>
         <button type="button" data-open-window=".game-window"><img src="/assets/neuro-exe-icon.svg" alt="" /><span><strong>NEURO.EXE</strong><small>Restore program</small></span></button>
+      </div>
+      <div class="start-menu-links">
+        <a href="https://xiaoyuan.gg" target="_blank" rel="noopener noreferrer">XiaoYuan Games<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="https://x.com/XiaoYuanGames" target="_blank" rel="noopener noreferrer">X<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="https://discord.gg/7yDFjbxSGZ" target="_blank" rel="noopener noreferrer">Discord<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="mailto:contact@xiaoyuan.gg">Press: contact@xiaoyuan.gg</a>
       </div>
     </nav>
 
